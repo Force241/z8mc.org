@@ -1,0 +1,429 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #000; /* pure black */
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #ff004c, #0066ff, #00ffcc, #ffcc00);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+}
+
+.logo {
+  font-size: 6em;
+  color: #fff;
+  text-shadow: 0 0 20px #ff004c, 0 0 40px #0066ff;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #eee;
+}
+
+.ip-box {
+  margin: 20px;
+  font-size: 1.2em;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background: #111;
+  color: #fff;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #ff004c, #0066ff) 1;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 15px #ff004c, 0 0 15px #0066ff;
+}
+
+.music-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff004c;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.music-btn:hover {
+  background: #0066ff;
+}
+
+@keyframes gradientShift {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #000; /* pure black */
+  color: #fff;
+}
+
+/* Navbar with colorful gradient */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #ff004c, #0066ff, #00ffcc, #ffcc00);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+  padding: 15px 30px;
+}
+
+.navbar h2 {
+  color: #fff;
+}
+
+.navbar a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #000;
+}
+
+/* Rankings */
+.ranks {
+  padding: 40px;
+  text-align: center;
+}
+
+.ranks h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+.leaderboard {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Player rows */
+.player-row {
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.player-row:hover {
+  transform: scale(1.05);
+  background: #222;
+}
+
+/* Spark effect for top 3 */
+.gold { background: radial-gradient(circle, rgba(255,215,0,0.3), #111); }
+.silver { background: radial-gradient(circle, rgba(192,192,192,0.3), #111); }
+.bronze { background: radial-gradient(circle, rgba(205,127,50,0.3), #111); }
+
+/* Player name formatting */
+.player-name {
+  font-size: 1.5em;
+}
+
+.rank-num {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.gold-text { color: gold; }
+.silver-text { color: silver; }
+.bronze-text { color: #cd7f32; }
+.gray-text { color: #888; }
+
+/* Region */
+.region {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+/* Tier circles */
+.tiers {
+  display: flex;
+  gap: 10px;
+}
+
+.circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000;
+  background: #fff;
+}
+
+/* Circle colors */
+.gold-circle { background: gold; }
+.silver-circle { background: silver; }
+.bronze-circle { background: #cd7f32; }
+.blue-circle { background: #00bfff; }
+.red-circle { background: #ff0000; }
+.purple-circle { background: #800080; }
+
+@keyframes gradientShift {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+.rank-num {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.sparkle-bg {
+  background: linear-gradient(135deg, gold, orange, yellow);
+  animation: sparkle 2s infinite;
+}
+
+.gray-bg {
+  background: #555;
+}
+
+@keyframes sparkle {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.5); }
+  100% { filter: brightness(1); }
+}
+
+/* Circles with Minecraft textures */
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* Example textures (replace with actual Minecraft PNGs) */
+.potion { background-image: url('textures/potion.png'); }
+.helmet { background-image: url('textures/helmet.png'); }
+.mace { background-image: url('textures/mace.png'); }
+.axe { background-image: url('textures/axe.png'); }
+.endcrystal { background-image: url('textures/endcrystal.png'); }
+.enderpearl { background-image: url('textures/enderpearl.png'); }
+.builder { background-image: url('textures/builder.png'); }
+.rank-num {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 12px 0 0 12px; /* sharp start */
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.sparkle-bg {
+  background: linear-gradient(135deg, gold, orange, yellow);
+  animation: sparkle 2s infinite;
+}
+
+.gray-bg {
+  background: #555;
+}
+
+@keyframes sparkle {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.5); }
+  100% { filter: brightness(1); }
+}
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #ff004c, #0066ff, #00ffcc, #ffcc00);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #ff004c, #0066ff, #00ffcc, #ffcc00);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+  padding: 15px 30px;
+}
+
+.navbar h2 {
+  color: #fff;
+}
+
+.navbar a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #000;
+}
+
+/* Content block */
+.content {
+  background: rgba(0,0,0,0.7);
+  padding: 40px;
+  margin: 40px auto;
+  border-radius: 15px;
+  width: 80%;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+  text-align: left;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px #ff004c, 0 0 40px #0066ff;
+}
+
+.content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+/* Default navbar style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: fixed;       /* makes it stick */
+  top: 0;                /* sticks to top */
+  left: 0;
+  width: 100%;           /* full width */
+  z-index: 1000;         /* stays above content */
+}
+
+/* Add spacing so content doesn’t hide under header */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #000;
+  color: #fff;
+  padding-top: 80px;     /* equal to header height */
+}
+
+/* Purple header for Mods page */
+.mods-header {
+  background: purple;
+}
+
+/* Gradient header for homepage */
+.home-header {
+  background: linear-gradient(135deg, #ff004c, #0066ff, #00ffcc, #ffcc00);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+}
+.mod-block {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.mod-block h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.mod-block img {
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+.download-btn {
+  display: inline-block;
+  background: #800080; /* purple button */
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background: #a020f0; /* lighter purple on hover */
+}
+/* Purple Mods header */
+.mods-header {
+  background: purple;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Blue Bedrock header */
+.bedrock-header {
+  background: #0066ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+/* Blue header for server info */
+.server-header {
+  background: #3333cc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Server info blocks */
+.server-block {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.server-block h2 {
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
